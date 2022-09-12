@@ -32,7 +32,8 @@ jobs:
       - name: "Enforce coverage"
         run: "scripts/coverage"
         
-build-aarch64:
+name: Build
+
     strategy:
       matrix:
         pyver: [cp37-cp37m, cp38-cp38, cp39-cp39]
