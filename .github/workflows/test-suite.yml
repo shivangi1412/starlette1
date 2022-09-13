@@ -29,8 +29,7 @@ jobs:
             ${{ env.img }} \
             bash -exc '${{ env.py }} -m venv .env && \
             source .env/bin/activate && \
-            sudo apt update && \
-            apt install python3 &&\
+            sudo apt install python3 &&\
             sudo apt-get install python3-pip && \
             pip3 install tox && \
             pip3 install -r requirements.txt && \
